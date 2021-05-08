@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body onload="getData()">
+    
+    <div class='editor'>
+        <form action="/save" method="POST" id="form">
+            <div>
+                <input class="title" type='text' name="title" id="title">
+                <button class="formatting-button" id="bold" type="button" onclick="make('strong')">Pogrubienie</button>
+                <button class="formatting-button" id="italic" type="button" onclick="make('i')">Pochylenie</button>
+                <button class="formatting-button" id="list" type="button" onclick="makeList()">Wylistowanie</button>
+            </div>
+            <div class="content" id="content" contenteditable="true"></div>
+            <input type="hidden" id="contentInput" name="content">
+            <button class='submit-text' type="submit">Zapisz</button>
+        </form>
+    </div>   
+
+    <div class='text-available-list' id="text-available-list"></div>
+
+<script src="./main.js"></script>
+</body>
+</html>

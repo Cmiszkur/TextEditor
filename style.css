@@ -1,0 +1,62 @@
+body {
+    display: grid;
+    justify-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.editor {
+    display: grid;
+    width: 600px;
+}
+
+.submit-text {
+    width: 5em;
+    height: 2em;
+    border-radius: 0.2em;
+    border: none;
+    background-color: bisque;
+    font-size: 1.2em;
+}
+
+.title {
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+.content {
+    width: 100%;
+    max-width: 600px;
+    height: 25em;
+    margin-bottom: 1em;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+
+.formatting-button {
+    border-radius: 0.2em;
+    border: none;
+    background-color: bisque;
+    height: 2em;
+}
+
+.text-available-list {
+    width: 600px;
+}
+
+.mainText {
+    width: 100%;
+    background-color: blanchedalmond;
+    margin-bottom: 0.4em;
+    border-radius: 0.2em;
+    padding: 0.4em;
+    word-wrap: break-word;
+}
+
+.mainText h {
+    text-align: start;
+    font-weight: bold;
+    font-size: 1.5em;
+}
